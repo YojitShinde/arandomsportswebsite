@@ -2,15 +2,118 @@
 <html>
 	<head>
 		<title>Sports</title>
+
+		<!--A bootstrap link for the "More Info" section.-->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+		<!--Style Sheet for an external css.-->
 		<link rel="stylesheet" type="text/css" href="index.css">
+
+		<!--In-Line css for the "More Info" section.-->
+		<style>
+		.content-area  {
+        background-color: #333;
+        color: white;  
+        text-align: center;
+        padding: 20px;
+        margin: 15px;
+        display: block;
+        width: 33%;
+    	}
+    	.hidden-content {
+        display: none;
+        font-size: 30px;
+        font-style: italic;
+    	}
+		</style>
+
+		<!--In-Line css for the "nessesscity of sports" section.-->
+		<style>
+		.hidepara{Display:none;}
+		</style>
+
+		<script src="C:\JQuery_Demo\jQuery.js"></script>
+
+		<!--JQuery script for the "More Info" section.-->
+		<script>
+			$(document).ready(function(){
+				$(".content-area").hover(function(){
+					$(this).find(".hidden-content").slideDown();
+				});
+
+				$(".content-area").mouseleave(function(){
+					$(this).find(".hidden-content").slideUp();
+			});
+		});
+		</script>
+
+		<!--JQuery script for the "nessesscity of sports" section.-->
+		<script>     
+            $(document).ready(function() {
+                $(".one").click(function() {
+                $("#head1").slideToggle("slow");
+                 });      
+                $(".two").click(function() {
+                $("#head2").slideToggle("slow");
+                });
+                $(".three").click(function() {
+                $("#head3").slideToggle("slow");
+                 });      
+                $(".four").click(function() {
+                $("#head4").slideToggle("slow");
+                });     
+                $(".five").click(function() {
+                $("#head5").slideToggle("slow");
+                });
+            });           
+    	</script>
 	</head>
 
 	<body>
-		<h1><center><u>Sports</u></center></h1>
+
+		<h1><center><u>Sports Club</u></center></h1>
+		<br>
 
 		<center>
-			<img src = "american_football.jpg" alt="the picture of two teams playing rugby.">
-		</center>
+			<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  				<div class="carousel-indicators">
+    				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  				</div>
+
+  			<div class="carousel-inner">
+    			<div class="carousel-item active">
+      				<img src="C:\Users\atuls\Desktop\Yojit\Lectures\Sem 3\web-design\HTML\badminton.jpg" alt="...">
+      				<div class="carousel-caption d-none d-md-block">
+        				<h5>Badminton</h5>
+      				</div>
+    			</div>
+    			<div class="carousel-item">
+      				<img src="C:\Users\atuls\Desktop\Yojit\Lectures\Sem 3\web-design\HTML\fencing.jpg" alt="...">
+      				<div class="carousel-caption d-none d-md-block">
+        				<h5>Fencing</h5>
+      				</div>
+    			</div>
+    			<div class="carousel-item">
+      				<img src="C:\Users\atuls\Desktop\Yojit\Lectures\Sem 3\web-design\HTML\table-tennis.jpg" alt="...">
+      				<div class="carousel-caption d-none d-md-block">
+        				<h5>Table-Tennis</h5>
+      				</div>
+    			</div>
+  			</div>
+  		</div></center>
+
+  			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    			<span class="visually-hidden">Previous</span>
+  			</button>
+  			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+    			<span class="visually-hidden">Next</span>
+  			</button>
+			</div>
+		<br><br>
 
 		<div class = "container-1">
 			<div class = "box-1">
@@ -31,39 +134,41 @@
 				</p>
 			</div>
 		</div>
+		<br><br>
 
 		<center><h2><u>The Necessity of Sports</u></h2></center>
+		<br>
 
 		<center><img src="soccer.jpg" alt = "A picture of two women playing soccer."></center>
+		<br>
 
 		<div class = box-2>
 			<p> 
-					<ol>
-						<li>
-							<strong>Better Sleep</strong>
-								<br>Fast Company suggests that exercise and sport triggers chemicals in the brain that can make you feel happier and relaxed. Team sports provide a chance to unwind and take part in an activity that improves your fitness. If you play sports outside, you can benefit from fresh air which is said to promote a good night’s sleep.</br>
-						</li>
-						<li>
-							<strong>A Strong Heart</strong>
-								<br>Your heart is a muscle and needs frequent exercise to help it keep fit and healthy. A healthy heart can pump blood efficiently around your body. Your heart will improve in performance when it is regularly challenged with exercise. Stronger hearts can improve overall health of the body.</br>
-						</li>
-						<li>
-							<strong>Improved Lung Function</strong>
-								<br>Regular sport causes more oxygen to be drawn into the body with carbon monoxide and waste gases expelled. This increases the lung capacity during sport, improving lung function and efficiency.</br>
-						</li>
-						<li>
-							<strong>Reduces Stress</strong>
-								<br>When you are physically active your mind gets a chance to unplug from daily stresses and strains of life. Physical exercise reduces the stress hormones in your body and stimulates the release of endorphins. These endorphins may give you more energy and focus for whatever life has.</br>
-						</li>
-						<li>
-							<strong>Improved Mental Health</strong>
-								<br>The Public Health Agency report that regular participation in sport and being active can also promote good mental health. This includes improving your mood, enhancing your sense of well-being, reducing anxiety, combating negative emotions and protecting against depression.</br>
-						</li>					
-					</ol>
+				<ol>
+					<li>
+						<strong class="one">Better Sleep</strong>
+							<br><label class="hidepara" id="head1">Fast Company suggests that exercise and sport triggers chemicals in the brain that can make you feel happier and relaxed. Team sports provide a chance to unwind and take part in an activity that improves your fitness. If you play sports outside, you can benefit from fresh air which is said to promote a good night’s sleep.</label></br>
+					</li>
+					<li>
+						<strong class="two">A Strong Heart</strong>
+							<br><label class="hidepara" id="head2">Your heart is a muscle and needs frequent exercise to help it keep fit and healthy. A healthy heart can pump blood efficiently around your body. Your heart will improve in performance when it is regularly challenged with exercise. Stronger hearts can improve overall health of the body.</label></br>
+					</li>
+					<li>
+						<strong class="three">Improved Lung Function</strong>
+							<br><label class="hidepara" id="head3">Regular sport causes more oxygen to be drawn into the body with carbon monoxide and waste gases expelled. This increases the lung capacity during sport, improving lung function and efficiency.</label></br>
+					</li>
+					<li>
+						<strong class="four">Reduces Stress</strong>
+							<br><label class="hidepara" id="head4">When you are physically active your mind gets a chance to unplug from daily stresses and strains of life. Physical exercise reduces the stress hormones in your body and stimulates the release of endorphins. These endorphins may give you more energy and focus for whatever life has.</label></br>
+					</li>
+					<li>
+						<strong class="five">Improved Mental Health</strong>
+							<br><label class="hidepara" id="head5">The Public Health Agency report that regular participation in sport and being active can also promote good mental health. This includes improving your mood, enhancing your sense of well-being, reducing anxiety, combating negative emotions and protecting against depression.</label></br>
+					</li>					
+				</ol>
 			</p>
 		</div>
-
-		<p><ul></ul></p>
+		<br><br>
 
 		<div class = container-2>
 			<div class = box-3>
@@ -84,10 +189,29 @@
 				</p>
 			</div>
 		</div>
+		<br>
+
+		<center>
+          <p> Table: Percentage decline of the participation in organized sport (sport club-activities) at least once a week. 
+         </p>
+ 		</center>
+
+		<center><table cellpadding="20px">
+			<tr><th>Age</th><th>Male</th><th>Female</th></tr>
+			<tr><td>9-12</td><td>9.3</td><td>9.3</td></tr>
+			<tr><td>12-15</td><td>11.2</td><td>7.2</td></tr>
+			<tr><td>15-18</td><td>10.4</td><td>7.4</td></tr>
+			<tr><td>18-21</td><td> 4.5</td><td>3.2</td></tr>
+			<tr><td>21-24</td><td> 1.8</td><td>2.2</td></tr>
+			<tr><td>24-27</td><td> 0.0</td><td>1.5</td></tr>
+		</table></center>
+		<br><br>
 
 		<center><h2>Possible Solutions to the Problem at Hand</h2></center>
+		<br>
 
 		<center><img src="youth_sports.jpg" alt = "A boy playing basketball."></center>
+		<br>
 
 		<div class = container-3>
 			<div class = box-4>
@@ -110,44 +234,52 @@
 			</div>
 		</div>
 
-		<br></br>
+		<br><br>
 
-		<div class = container-4>
-			<div class = box-5>
-				<center><h2><u>Register for latest updates</u></h2></center>
-				<form action="index1.html" target="_blank" method="post"><center>
-						<table>
-							<tr>
-								<td>First Name:</td>
-								<td><input type="text" placeholder="Enter first-name" name="" required></td>
-							</tr>
-							<tr>
-								<td>Last Name:</td>
-								<td><input type="text" placeholder="Enter last-name" name="" required></td>
-							</tr>
-							<tr>
-								<td>Gender:</td>
-								<td>
-									<input type="radio" name="Gender">Male
-									<input type="radio" name="Gender">Female
-									<input type="radio" name="Gender">Other
-								</td>
-							</tr>
-							<tr>
-								<td>Date of Birth:</td>
-								<td><input type="Date" name="" required></td>
-							</tr>
-							<tr>
-								<td>Email:</td>
-								<td><input type="mail" placeholder="xyz@gmail.com" name="" required></td>
-							</tr>
-							<tr>
-								<td><input type="Submit" value="Submit" name=""></td>
-							</tr>
-						</table>
-					</center></form>
-			</div></div>
+	<center>
+	<div class="container-4">
+		
+			<form action="index1.html" target="_blank" method="post">
+			<fieldset>
+				<legend><b>Stay Updated</b></legend>
+
+				<label>First name:</label><br>
+				<input type="text" placeholder="Enter first-name" name="" required>
+				<br>
+
+				<label>Last name:</label><br>
+				<input type="text" placeholder="Enter last-name" name="" required>
+				<br>
+
+				<label>Email:</label><br>
+				<input type="email" name="mail" placeholder="xyz@gmail.com" required>
+				<br><br>
+
+				<input type="Submit" value="Submit" name="">
+				<br>
+			</fieldset>
+		</form>
+	</div>
+	</center>
+	<br><br>
+		
+		<center>
+			<div class="container-5">
+			<div class="box-5">
+				<div class="content-area">
+					<div class="content">
+						For more Information<br>
+					</div>
+					<div class="hidden-content">
+						<A href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target = _blank>Click Here</A>
+					</div>
+				</div>
+				<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+			</div>
+		</div>
+		</center>
 
 		<center><h3> &copy; sports_web </h3></center>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 	</body>
 </html>
