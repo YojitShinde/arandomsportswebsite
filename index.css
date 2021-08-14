@@ -10,6 +10,11 @@ body
 	line-height: 1.6em;
 	margin: 0;
 }
+table{
+  border: 2px solid black;
+  border-collapse: collapse;
+  background-color: white;
+}
 .container-1
 {
 	width: 85%;
@@ -59,21 +64,8 @@ body
 	border-radius: 15px;
 	padding: 10px;
 }
-/*table, th, td 
-{
-  border: 2px solid black;
-  border-collapse: collapse;
-  background-color: white;
-}*/
 .container-4
 {
 	width: 50%;
 	margin: auto
-}
-.box-5
-{
-	background-color: #333;
-	color: #fff;
-	border: 3px black solid;
-	padding: 10px;
 }
